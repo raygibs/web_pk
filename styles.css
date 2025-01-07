@@ -1,0 +1,263 @@
+/* General Styles */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(35, 22, 151);
+    color: rgba(243, 246, 245, 0.929);
+  }
+  
+  header {
+    background-color: #3120ad;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(222, 215, 215, 0.1);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    color: rgb(242, 243, 248);
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color:  white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #e2e1eb;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: white;
+  }
+  
+  .hero .text-content {
+    max-width: 50%;
+    color:  #151fa6;
+  }
+  
+  .hero .text-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero .btn {
+    display: inline-block;
+    background-color:  #2342b2;
+    color: #FFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero .btn:hover {
+    background-color: #2419ba;
+  }
+  
+  .hero .image-content img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Sections */
+  section {
+    padding: 50px;
+    margin: 50px 0;
+    background-color: #FAF3E6;
+    border-radius: 10px;
+  }
+  
+  section:nth-child(even) {
+    background-color: #e8f0fe;
+  }
+  
+  section img{
+    height: 300px;
+    width: auto; 
+    object-fit: cover; 
+    display: block;
+    margin: 0 auto 10px; 
+    border-radius: 10px; 
+  }
+
+  section h2 {
+    font-size: 2rem;
+    color:  white;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    line-height: 1.6;
+  }
+  
+
+/* activity-section */
+  #activity-section {
+    padding: 20px 20px 20px 30px;
+    background-color: #152299;
+  }
+
+  #activity-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color:  rgb(231, 231, 237);
+  }
+
+  #activity-section .row {
+    display: flex; 
+    gap: 20px; 
+    justify-content: space-around;
+  }
+
+  #activity-section .content {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    width: 30%; 
+  }
+
+  #activity-section img {
+    height: 400px;
+    width: auto; 
+    object-fit: cover; 
+    display: block;
+    margin: 0 auto 10px; 
+    border-radius: 10px; 
+  }
+
+  #activity-section .text {
+    font-size: 14px;
+    color:  white;
+  }
+
+  @media (max-width: 768px) {
+    #activity-section .row {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    #activity-section .content {
+        width: 100%; 
+    }
+}
+
+ /* info-section */
+ #info-section {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 20px; 
+  padding: 20px;
+  background-color:  white;
+  flex-wrap: wrap; 
+}
+
+#info-section .info {
+  text-align: center;
+  flex: 1;
+  max-width: 300px; 
+  margin: 10px;
+}
+
+#info-section h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color:#1428c5;
+}
+
+#info-section p {
+  font-size: 14px;
+  color:#1323ab;
+}
+
+@media (max-width: 768px) {
+  #info-section {
+    flex-direction: column; 
+  }
+
+  #info-section .info {
+    max-width: 100%; 
+  }
+}
+
+
+  /* Footer (Optional) */
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1815a6;
+    color: white;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+
+  .footer-section {
+    flex: 1;
+    text-align: center;
+  }
+
+  .footer-section.contact {
+    text-align: left;
+  }
+
+  .footer-section.connect {
+    text-align: center;
+  }
+
+  .footer-section.copyright {
+    text-align: right;
+  }
+
+  .social-icons a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      transition: color 0.3s;
+  }
+
+  .social-icons a:hover {
+      color: #3498db;
+  }
+
+  @media (max-width: 768px) {
+      footer {
+          flex-direction: column;
+          text-align: center;
+      }
+
+      .footer-section {
+          margin-bottom: 15px;
+      }
+
+      .footer-section.copyright {
+          text-align: center;
+      }
+}
+  
